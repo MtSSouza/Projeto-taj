@@ -41,6 +41,7 @@ public class PlayerClimb : MonoBehaviour {
 	void Start () {
 		pm = this.GetComponent<Player_Mov>();
 		sb = go.GetComponent<warningActivit> ();
+		nS = false;
 	}
 
     void OnTriggerEnter2D(Collider2D Find) 

@@ -14,7 +14,7 @@ public class beginPhase : MonoBehaviour {
 	public bool arrivedToGatilho9;
 
 	void Start() {
-	
+		
 		pm = this.GetComponent<Player_Mov>();
 	}
 
