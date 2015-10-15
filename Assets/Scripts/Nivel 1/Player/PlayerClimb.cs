@@ -118,6 +118,7 @@ public class PlayerClimb : MonoBehaviour {
 
 					if (sb.acFlauta){
 						flauta = true;
+                        this.GetComponent<Animator>().SetBool("toMoveFlauta", true);
 					}
                     Move = false;
                     Climb.inAction = false;
