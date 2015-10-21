@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Menu\buttonsMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\buttonsVoltar.cs" />
      <Compile Include="Assets\Scripts\Menu\exit.cs" />
+     <Compile Include="Assets\Scripts\Menu\inicioMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\stopMusic.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Botões\Pause.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Botões\ShowButton.cs" />
