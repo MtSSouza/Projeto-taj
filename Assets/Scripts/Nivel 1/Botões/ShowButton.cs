@@ -6,6 +6,7 @@ public class ShowButton : MonoBehaviour {
     public GameObject button;
 	private TriggerFind componentActivator;
 	private PlayerClimb pc;
+
 	private warningActivit wa;
 
 
@@ -45,11 +46,6 @@ public class ShowButton : MonoBehaviour {
 			button.gameObject.SetActive(false);
 		}
 		//Debug.Log (acFlauta);
-		if (button.name == "gameover") {
-			if(pc.flauta) {
-				this.gameObject.SetActive(false);
-			}
-		}
 
 	}
 }
