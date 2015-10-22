@@ -20,10 +20,10 @@ public class somCobra : MonoBehaviour {
 	void Update () {
 
 		if (aC.gameObject.activeSelf == true && cA.canGoUp == true) {
-			aS.audio.mute = false;
-
-		} else {
-			aS.audio.mute = true;
+            aS.audio.enabled = true;
+		} 
+        else {
+            aS.audio.enabled = false;
 		}
 	}
 }
