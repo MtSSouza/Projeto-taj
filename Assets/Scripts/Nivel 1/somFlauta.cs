@@ -8,6 +8,7 @@ public class somFlauta : MonoBehaviour {
 	public GameObject aS;
 	private PlayerClimb pc;
 	public GameObject aC;
+    public GameObject avisoCobra;
     private bool desatColi;
 	// Use this for initialization
 	void Start () {
@@ -39,6 +40,7 @@ public class somFlauta : MonoBehaviour {
         if (desatColi)
         {
             this.gameObject.SetActive(false);
+            avisoCobra.gameObject.SetActive(false);
         }
 	}
 }
