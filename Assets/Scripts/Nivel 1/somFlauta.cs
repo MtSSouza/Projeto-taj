@@ -19,8 +19,14 @@ public class somFlauta : MonoBehaviour {
 	void Update () {
 	
 		if (aC.gameObject.activeSelf == true && pc.flauta == true) {
-            player.GetComponent<Animator>().SetBool("toPlayFlauta", true);
-			aS.audio.enabled = true;
+            if (aS.audio.isPlaying == true) {
+                player.GetComponent<Animator>().SetBool("toPlayFlauta", true);
+                aS.audio.enabled = true;
+            }
+            else {
+                player.GetComponent<Animator>().SetBool("toPlayFlauta", false);
+                aS.audio.enabled = false;
+            }
 		} 
 	}
 }
