@@ -17,9 +17,8 @@ public class flauta : MonoBehaviour {
 
         if (pc.flauta)
         {
-            this.transform.eulerAngles = new Vector3(0, 0, 90f);
-            this.transform.position = new Vector3(player.transform.position.x - 0.5f, player.transform.position.y, player.transform.position.z - 0.1f);
+            this.gameObject.SetActive(false);
         }
-        if (PlayerClimb.nS) this.gameObject.SetActive(false);
+      
     }
 }

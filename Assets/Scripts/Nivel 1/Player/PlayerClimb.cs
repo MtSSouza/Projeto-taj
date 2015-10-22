@@ -142,7 +142,6 @@ public class PlayerClimb : MonoBehaviour {
         if (ganeshaB)
         {
             ganesha.transform.position = new Vector3(-6.38f, -4.25f, 0f);
-            nS = true;
         }
         
 	}
