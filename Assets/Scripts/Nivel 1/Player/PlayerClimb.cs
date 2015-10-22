@@ -133,6 +133,7 @@ public class PlayerClimb : MonoBehaviour {
 					garota.transform.eulerAngles = new Vector3(0, 0, 0);
 					garota.transform.localPosition = new Vector3(-3.50f , -4.80f, 0f);
                     this.GetComponent<Animator>().SetBool("toMoveFlauta", false);
+					this.GetComponent<Animator>().SetBool("toMove", true);
 
 					break;
 
