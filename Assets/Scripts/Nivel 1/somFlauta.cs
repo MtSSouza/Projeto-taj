@@ -3,6 +3,7 @@ using System.Collections;
 
 public class somFlauta : MonoBehaviour {
 
+    public GameObject player;
 	private ShowButton sB;
 	public GameObject aS;
 	private PlayerClimb pc;
@@ -18,6 +19,7 @@ public class somFlauta : MonoBehaviour {
 	void Update () {
 	
 		if (aC.gameObject.activeSelf == true && pc.flauta == true) {
+            player.GetComponent<Animator>().SetBool("toPlayFlauta", true);
 			aS.audio.enabled = true;
 		} 
 	}
