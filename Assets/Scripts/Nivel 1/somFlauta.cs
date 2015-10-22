@@ -8,25 +8,37 @@ public class somFlauta : MonoBehaviour {
 	public GameObject aS;
 	private PlayerClimb pc;
 	public GameObject aC;
-
+    private bool desatColi;
 	// Use this for initialization
 	void Start () {
+        desatColi = false;
 		pc = GameObject.Find ("player").GetComponent<PlayerClimb> ();
 		sB = this.gameObject.GetComponent ("ShowButton") as ShowButton;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-		if (aC.gameObject.activeSelf == true && pc.flauta == true) {
-            if (aS.audio.isPlaying == true) {
-                player.GetComponent<Animator>().SetBool("toPlayFlauta", true);
-                aS.audio.enabled = true;
+      //  Debug.Log(aS.audio.isPlaying);
+		if (aC.gameObject.activeSelf && pc.flauta) {
+            Debug.Log(desatColi);
+            aS.audio.enabled = true;
+            if (!aS.audio.isPlaying)
+            {
+                desatColi = true;
             }
-            else {
-                player.GetComponent<Animator>().SetBool("toPlayFlauta", false);
-                aS.audio.enabled = false;
-            }
-		} 
+		}
+
+        if (aS.audio.isPlaying)
+        {
+            player.GetComponent<Animator>().SetBool("toPlayFlauta", true);
+        }
+        else {
+            player.GetComponent<Animator>().SetBool("toPlayFlauta", false);
+        }
+
+        if (desatColi)
+        {
+            this.gameObject.SetActive(false);
+        }
 	}
 }
