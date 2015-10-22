@@ -42,6 +42,7 @@ public class ExitDoor : MonoBehaviour {
 
 			if (gatilho2) {
 				transform.position = Vector3.MoveTowards(transform.position, gatilhoGO3.transform.position, Time.deltaTime * speed_x);
+                this.GetComponent<Animator>().SetBool("toMove", true);
 				pc.pm.ray = gatilhoGO3.transform.position;
 			}
 	        if (gatilho3)
@@ -53,6 +54,7 @@ public class ExitDoor : MonoBehaviour {
 				gatilho3 = false;
                 gatilho5 = false;
 				pc.action = "";
+                this.GetComponent<Animator>().SetBool("toMove", false);
 	        }
 			break;
 		case "Descer":
@@ -61,6 +63,7 @@ public class ExitDoor : MonoBehaviour {
 			if (gatilho) 
 			{
 				transform.position = Vector3.MoveTowards(transform.position, gatilhoGO5.transform.position, Time.deltaTime * speed_x);
+                this.GetComponent<Animator>().SetBool("toMove", true);
 				pc.pm.ray = gatilhoGO5.transform.position;
 			}
 			if (gatilho5)
@@ -72,7 +75,8 @@ public class ExitDoor : MonoBehaviour {
 				mask2.gameObject.SetActive(false);
 				gatilho5 = false;
 				pc.action = "";
-				//gatilhoGO5.SetActive(false);
+                this.GetComponent<Animator>().SetBool("toMove", false);
+				
 			}
 			break;
 
