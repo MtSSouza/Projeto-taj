@@ -81,6 +81,7 @@ public class PlayerClimb : MonoBehaviour {
 
 				if(!arrivedToGatilho7 && !arrivedUp) {
 					transform.position = Vector3.MoveTowards(transform.position, gatilho7.transform.position, Time.deltaTime * speed_x);
+                    this.GetComponent<Animator>().SetBool("toMove", true);
 					pm.ray = gatilho7.transform.position;
 				}
 
@@ -88,6 +89,7 @@ public class PlayerClimb : MonoBehaviour {
 
 				if(arrivedToGatilho7) {
 					transform.position = Vector3.MoveTowards(transform.position, gatilho.transform.position , Time.deltaTime * speed_x);
+                    this.GetComponent<Animator>().SetBool("toMove", true);
 					pm.ray = gatilho.transform.position;
 				}
 				
@@ -108,6 +110,7 @@ public class PlayerClimb : MonoBehaviour {
 					}
 
                     if (!goDown && Move) {
+                        this.GetComponent<Animator>().SetBool("toMove", true);
                         transform.position = Vector3.MoveTowards(transform.position, gatilho2.transform.position, Time.deltaTime * speed_x);
                         arrivedUp = false;
 						pm.ray = gatilho2.transform.position;
