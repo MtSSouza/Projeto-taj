@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Nivel 1\Player\flauta.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\somCobra.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\somFlauta.cs" />
+     <Compile Include="Assets\vitoria.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
