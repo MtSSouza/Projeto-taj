@@ -8,6 +8,7 @@ public class somFlauta : MonoBehaviour {
 	public GameObject aS;
 	private PlayerClimb pc;
 	public GameObject aC;
+    public GameObject cobra;
     public GameObject avisoCobra;
     private bool desatColi;
 	// Use this for initialization
@@ -34,6 +35,8 @@ public class somFlauta : MonoBehaviour {
             player.GetComponent<Animator>().SetBool("toPlayFlauta", true);
         }
         else {
+            cobra.GetComponent<Animator>().SetBool("toMoveCobra", false);
+
             player.GetComponent<Animator>().SetBool("toPlayFlauta", false);
         }
 
