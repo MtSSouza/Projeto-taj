@@ -135,7 +135,7 @@ public class PlayerClimb : MonoBehaviour {
 					Move = false;
 					Climb.inAction = false;
                     garota.gameObject.SetActive(true);
-                    garota2.gameObject.SetActive(false);
+					garota2.gameObject.GetComponent<SpriteRenderer>().enabled  = false;
                     this.GetComponent<Animator>().SetBool("toMoveFlauta", false);
 					this.GetComponent<Animator>().SetBool("toMove", true);
 					Player_Mov.canMove = true;	

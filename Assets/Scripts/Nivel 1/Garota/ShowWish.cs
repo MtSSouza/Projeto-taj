@@ -6,7 +6,7 @@ public class ShowWish : MonoBehaviour {
 	public GameObject balao;
 	public PlayerClimb pc;
 	public GameObject player;
-	public GameObject win;
+	public bool win;
     public GameObject cenarioE;
     public GameObject cenarioI;
 
@@ -24,35 +24,14 @@ public class ShowWish : MonoBehaviour {
         gatilho9 = GameObject.FindGameObjectWithTag("gatilho9");
         gatilho8 = GameObject.FindGameObjectWithTag("gatilho8");
         gatilhoFinal = GameObject.FindGameObjectWithTag("gatilhoFinal");
+		win = false;
 	}
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if (pc.ganeshaB) {
             beginPhase.begin = false;
-            if (!pc.getOut) {
-                Debug.Log("1 if");
-                player.transform.position = Vector3.MoveTowards(player.transform.position, gatilhoSaida.transform.position, Time.deltaTime * 4.3f);
-            }
-            if (pc.getOut && !pc.firstTrigger) {
-                Debug.Log("2 if");
-                go.SetActive(false);
-                cenarioE.SetActive(true);
-                cenarioI.SetActive(false);
-                player.transform.position = Vector3.MoveTowards(player.transform.position, gatilho9.transform.position, Time.deltaTime * 4.3f);
-            }
-            if (pc.firstTrigger && !pc.secondTrigger) {
-                Debug.Log("3 if");
-                player.transform.position = Vector3.MoveTowards(player.transform.position, gatilho8.transform.position, Time.deltaTime * 4.3f);
-            }
-            if (pc.secondTrigger && pc.endTrigger) {
-                Debug.Log("4 if");
-                player.transform.position = Vector3.MoveTowards(player.transform.position, gatilhoFinal.transform.position, Time.deltaTime * 4.3f);
-            }
-            if (pc.endTrigger) {
-                Debug.Log("5 if");
-                win.SetActive(true);
-            }
+			win = true;
 		}
 		if (!pc.ganeshaB) {
 			if (col.tag.Equals ("player")) {

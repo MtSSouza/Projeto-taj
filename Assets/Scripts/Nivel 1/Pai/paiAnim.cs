@@ -4,9 +4,12 @@ using System.Collections;
 public class paiAnim : MonoBehaviour {
 
 	private bool toAnimPai;
+	private SpriteRenderer sR;
+	public GameObject cP;
 
 	// Use this for initialization
 	void Start () {
+		sR = this.GetComponent<SpriteRenderer> ();
 		toAnimPai = false;
 	}
 
@@ -26,6 +29,11 @@ public class paiAnim : MonoBehaviour {
 			this.GetComponent<Animator> ().SetBool ("toAnimPai", true);
 		} else {
 			this.GetComponent<Animator> ().SetBool ("toAnimPai", false);
+		}
+
+		if (sR.sprite.name == "Pai0006") {
+			toAnimPai = false;
+			cP.gameObject.SetActive(false);
 		}
 	
 	}
