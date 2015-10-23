@@ -5,5 +5,6 @@ public class buttonsMenu : MonoBehaviour {
 
     void OnMouseDown() {
         Application.LoadLevel(2);
+		beginPhase.begin = false;
     }
 }
