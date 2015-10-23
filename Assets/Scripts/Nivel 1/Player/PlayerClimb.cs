@@ -14,7 +14,7 @@ public class PlayerClimb : MonoBehaviour {
 	public GameObject mask2;
 	public GameObject go;
 	public GameObject ganesha;
-
+    public GameObject garota2;
 	private warningActivit sb;
 	public Player_Mov pm;
 
@@ -133,8 +133,8 @@ public class PlayerClimb : MonoBehaviour {
 					ganeshaB = true;
 					Move = false;
 					Climb.inAction = false;
-					garota.transform.eulerAngles = new Vector3(0, 0, 0);
-					garota.transform.localPosition = new Vector3(-3.50f , -4.80f, 0f);
+                    garota.gameObject.SetActive(true);
+                    garota2.gameObject.SetActive(false);
                     this.GetComponent<Animator>().SetBool("toMoveFlauta", false);
 					this.GetComponent<Animator>().SetBool("toMove", true);
 
@@ -144,7 +144,7 @@ public class PlayerClimb : MonoBehaviour {
         }
         if (ganeshaB)
         {
-            ganesha.transform.position = new Vector3(-6.38f, -4.25f, 0f);
+            ganesha.transform.position = new Vector3(-2.77f, -3.77f, 0f);
         }
         
 	}
