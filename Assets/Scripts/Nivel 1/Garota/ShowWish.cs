@@ -56,7 +56,8 @@ public class ShowWish : MonoBehaviour {
 		}
 		if (!pc.ganeshaB) {
 			if (col.tag.Equals ("player")) {
-				balao.SetActive (true);
+                balao.SetActive(true);
+                this.GetComponent<Animator>().SetBool("toMoveGarota", true);
 			}
 		}
 	}
@@ -66,6 +67,7 @@ public class ShowWish : MonoBehaviour {
 
 		if (col.tag.Equals ("player")) {
 			balao.SetActive (false);
+            this.GetComponent<Animator>().SetBool("toMoveGarota", false);
 		}
 
 	}
