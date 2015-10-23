@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Nivel 1\Escada\TriggerFind.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Garota\ShowWish.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Garota\animGarota.cs" />
+     <Compile Include="Assets\Scripts\Nivel 1\Pai\paiAnim.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Player\EntrarCasa.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Player\PlayerClimb.cs" />
      <Compile Include="Assets\Scripts\Nivel 1\Player\Player_Mov.cs" />
