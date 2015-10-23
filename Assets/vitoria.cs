@@ -15,17 +15,16 @@ public class vitoria : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 		if (sW.win) {
-			this.gameObject.SetActive (true);
+			this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
 			this.GetComponent<Animator> ().SetBool ("isWin", true);
 		} else {
-			this.gameObject.SetActive (false);
+			this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
 			this.GetComponent<Animator> ().SetBool ("isWin", false);
 		}
 
-		if (sR.sprite.name == "") {
-			this.GetComponent<Animator> ().SetBool ("isWin", false);
-		}
 	}
 }
+
+//ximenes e lindo e incrivel 

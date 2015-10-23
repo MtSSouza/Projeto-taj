@@ -37,7 +37,7 @@ public class Player_Mov : MonoBehaviour
 			if (ray.x > this.transform.position.x)
 				this.transform.eulerAngles = new Vector3 (0f, 0f, 0f);
 		}
-		Debug.Log (canMove);
+		//Debug.Log (canMove);
 		animStateMove = animatorMove.GetCurrentAnimatorStateInfo (0);
 		if (beginPhase.begin == true && canMove == true) {
 		
