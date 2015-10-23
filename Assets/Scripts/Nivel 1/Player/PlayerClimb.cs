@@ -35,6 +35,7 @@ public class PlayerClimb : MonoBehaviour {
 	public bool goUp = false;
 	public bool goDown = false;
 	public bool flauta = false;
+	public bool animFlauta = false;
 	public bool inAction = false;
 
 	// Use this for initialization
@@ -125,7 +126,7 @@ public class PlayerClimb : MonoBehaviour {
 					}
                     Move = false;
                     Climb.inAction = false;
-
+					Player_Mov.canMove = true;
 
 					break;
 				case "Ganesha":
@@ -137,6 +138,7 @@ public class PlayerClimb : MonoBehaviour {
                     garota2.gameObject.SetActive(false);
                     this.GetComponent<Animator>().SetBool("toMoveFlauta", false);
 					this.GetComponent<Animator>().SetBool("toMove", true);
+					Player_Mov.canMove = true;	
 
 					break;
 
@@ -144,7 +146,7 @@ public class PlayerClimb : MonoBehaviour {
         }
         if (ganeshaB)
         {
-            ganesha.transform.position = new Vector3(-2.77f, -3.77f, 0f);
+            ganesha.transform.position = new Vector3(-7f, -3.3f, 0f);
         }
         
 	}

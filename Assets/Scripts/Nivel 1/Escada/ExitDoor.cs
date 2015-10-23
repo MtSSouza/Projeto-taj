@@ -55,6 +55,7 @@ public class ExitDoor : MonoBehaviour {
                 gatilho5 = false;
 				pc.action = "";
                 this.GetComponent<Animator>().SetBool("toMove", false);
+				Player_Mov.canMove = true;
 	        }
 			break;
 		case "Descer":
@@ -76,7 +77,7 @@ public class ExitDoor : MonoBehaviour {
 				gatilho5 = false;
 				pc.action = "";
                 this.GetComponent<Animator>().SetBool("toMove", false);
-				
+				Player_Mov.canMove = true;
 			}
 			break;
 

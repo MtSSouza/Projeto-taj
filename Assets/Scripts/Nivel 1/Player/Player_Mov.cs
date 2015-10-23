@@ -30,12 +30,16 @@ public class Player_Mov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		animStateMove = animatorMove.GetCurrentAnimatorStateInfo(0);
-		if (beginPhase.begin == true && canMove == true) {
+		if (beginPhase.begin == true) {
+		
 			if (ray.x < this.transform.position.x)
 				this.transform.eulerAngles = new Vector3 (0f, 180f, 0f);
 			if (ray.x > this.transform.position.x)
 				this.transform.eulerAngles = new Vector3 (0f, 0f, 0f);
+		}
+		Debug.Log (canMove);
+		animStateMove = animatorMove.GetCurrentAnimatorStateInfo (0);
+		if (beginPhase.begin == true && canMove == true) {
 		
 			newPos = new Vector3 (transform.localPosition.x, transform.localPosition.y, 0f);
 			Vector3 screenPos = Camera.main.WorldToScreenPoint (transform.localPosition);
@@ -53,11 +57,38 @@ public class Player_Mov : MonoBehaviour
 			if (transform.position == ray || pc.Move)
 				isMove = false;
 
-			if(isMove && ray != this.transform.position) {
+			if (isMove && ray != this.transform.position) {
 
-				animatorMove.SetBool("toMove", true);
+				animatorMove.SetBool ("toMove", true);
 			}
-			if(ray == this.transform.position) animatorMove.SetBool("toMove", false);
+			if (ray == this.transform.position)
+				animatorMove.SetBool ("toMove", false);
+		}
+		if (ray.y < 0) {
+		
+			if(ray.x < -8f) {
+				ray = new Vector3(-8f, ray.y, ray.z);
+			}
+			if(ray.x > 8.2f) {
+				ray = new Vector3(8.2f, ray.y, ray.z);
+			}	
+		}
+		if (ray.y > 0) {
+
+			if(pc.animFlauta) {
+
+				if(ray.x < -8f) {
+					ray = new Vector3(-8f, ray.y, ray.z);
+				}
+			} else {
+
+				if(ray.x < -3.2f) {
+					ray = new Vector3(-3.2f, ray.y, ray.z);
+				}
+			}
+			if(ray.x > 8.2f) {
+				ray = new Vector3(8.2f, ray.y, ray.z);
+			}	
 		}
     }
 }

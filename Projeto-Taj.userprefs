@@ -1,19 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Nivel 1\somFlauta.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Nivel 1\Player\PlayerClimb.cs">
     <Files>
-      <File FileName="Assets\Scripts\Nivel 1\somCobra.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Nivel 1\somCobra.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\Player\Player_Mov.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nivel 1\Player\PlayerClimb.cs" Line="150" Column="1" />
+      <File FileName="Assets\Scripts\Nivel 1\Player\PlayerClimb.cs" Line="147" Column="63" />
       <File FileName="Assets\Scripts\Nivel 1\Escada\ExitDoor.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\Player\beginPhase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nivel 1\Botões\ShowButton.cs" Line="48" Column="26" />
+      <File FileName="Assets\Scripts\Nivel 1\Botões\ShowButton.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\Botões\warningActivit.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\Botões\exitPause.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\Escada\Climb.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nivel 1\Escada\TriggerFind.cs" Line="31" Column="1" />
+      <File FileName="Assets\Scripts\Nivel 1\Escada\TriggerFind.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\Botões\Pause.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\stopMusic.cs" Line="83" Column="1" />
+      <File FileName="Assets\Scripts\Menu\stopMusic.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Nivel 1\somFlauta.cs" Line="21" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
