@@ -1,17 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\vitoria.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Nivel 1\Botões\exitPause.cs">
     <Files>
-      <File FileName="Assets\Scripts\Nivel 1\Botões\exitPause.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nivel 1\Botões\Pause.cs" Line="1" Column="1" />
+      <File FileName="Assets\vitoria.cs" Line="12" Column="2" />
+      <File FileName="Assets\Scripts\Nivel 1\Botões\exitPause.cs" Line="19" Column="28" />
       <File FileName="Assets\Scripts\Nivel 1\Botões\ShowButton.cs" Line="39" Column="39" />
       <File FileName="Assets\Scripts\Nivel 1\Botões\warningActivit.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Nivel 1\Garota\ShowWish.cs" Line="32" Column="18" />
-      <File FileName="Assets\Scripts\Nivel 1\somFlauta.cs" Line="44" Column="25" />
-      <File FileName="Assets\Scripts\Nivel 1\somCobra.cs" Line="33" Column="5" />
-      <File FileName="Assets\Scripts\Nivel 1\Player\PlayerClimb.cs" Line="138" Column="6" />
-      <File FileName="Assets\vitoria.cs" Line="26" Column="1" />
-      <File FileName="Assets\Scripts\Nivel 1\Player\Player_Mov.cs" Line="40" Column="5" />
+      <File FileName="Assets\Scripts\Nivel 1\Garota\ShowWish.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Nivel 1\somFlauta.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Nivel 1\somCobra.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Nivel 1\Player\PlayerClimb.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Nivel 1\Player\Player_Mov.cs" Line="9" Column="31" />
+      <File FileName="Assets\Scripts\Nivel 1\Botões\Pause.cs" Line="22" Column="3" />
+      <File FileName="Assets\Scripts\Menu\buttonsVoltar.cs" Line="12" Column="1" />
+      <File FileName="Assets\Scripts\Menu\buttonsMenu.cs" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
