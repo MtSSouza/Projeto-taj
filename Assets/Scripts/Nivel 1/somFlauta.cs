@@ -22,7 +22,6 @@ public class somFlauta : MonoBehaviour {
 	void Update () {
       //  Debug.Log(aS.audio.isPlaying);
 		if (aC.gameObject.activeSelf && pc.flauta) {
-            Debug.Log(desatColi);
             aS.audio.enabled = true;
             if (!aS.audio.isPlaying)
             {
@@ -42,6 +41,7 @@ public class somFlauta : MonoBehaviour {
 
         if (desatColi)
         {
+			pc.animFlauta = true;
             this.gameObject.SetActive(false);
             avisoCobra.gameObject.SetActive(false);
         }
